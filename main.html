@@ -1,0 +1,4310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>دعوة زفاف أحمد و مي</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<!-- =========================================
+     FONTS
+========================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Great+Vibes&family=Montserrat:wght@400;500&display=swap"
+  rel="stylesheet"
+>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+/* =========================HERO SECTION========================= */
+.hero-section{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.bg-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Optional dark overlay */
+/*.hero-section::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.15);
+}*/
+
+.scroll-indicator{
+    position:absolute;
+    bottom:35px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:5;
+    text-align:center;
+    color:white;
+    cursor:pointer;
+    user-select:none;
+}
+
+.scroll-indicator p{
+    font-size:24px;
+    letter-spacing:2px;
+    margin-bottom:10px;
+    font-weight:300;
+}
+
+.arrow{
+    width:32px;
+    height:32px;
+    animation:bounce 1.8s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(8px);
+    }
+}
+
+/* =========================================
+   FAMILY + COUNTDOWN SECTION
+========================================= */
+
+.family-countdown {
+  width: 100%;
+  min-height: 100vh;
+
+  position: relative;
+  overflow: hidden;
+
+  background: #faf5f3;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 105px 20px 150px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.family-content {
+  width: 100%;
+  max-width: 900px;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   DEAR FAMILY TITLE
+========================================= */
+
+.family-title {
+  margin: 0;
+
+  font-family: "Great Vibes", "Allura", cursive;
+
+  font-size: clamp(42px, 5vw, 66px);
+
+  font-weight: 400;
+
+  font-style: italic;
+
+  color: #151515;
+
+  line-height: 1.15;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.family-message {
+
+  margin: 65px auto 0;
+
+  max-width: 850px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: clamp(17px, 2vw, 25px);
+
+  font-weight: 400;
+
+  line-height: 1.9;
+
+  letter-spacing: 0.2px;
+
+  color: #555;
+
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.elegant-divider {
+
+  width: 450px;
+  max-width: 80%;
+
+  margin: 105px auto 135px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+}
+
+
+.elegant-divider span {
+
+  height: 1px;
+
+  flex: 1;
+
+  background: #555;
+
+}
+
+
+.elegant-divider b {
+
+  font-family: serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  letter-spacing: 2px;
+
+  color: #151515;
+
+  white-space: nowrap;
+
+}
+
+
+/* =========================================
+   COUNTDOWN TITLE
+========================================= */
+
+.countdown-title {
+
+  margin: 0 0 38px;
+
+  font-family: "Great Vibes", "Allura", cursive;
+
+  font-size: clamp(43px, 5vw, 63px);
+
+  font-weight: 400;
+
+  font-style: italic;
+
+  color: #151515;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   COUNTDOWN SUBTITLE
+========================================= */
+
+.countdown-subtitle {
+
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: clamp(16px, 2vw, 23px);
+
+  font-weight: 400;
+
+  letter-spacing: 5px;
+
+  color: #222;
+
+}
+
+
+/* =========================================
+   COUNTDOWN NUMBERS
+========================================= */
+
+.countdown {
+
+  width: 100%;
+
+  max-width: 800px;
+
+  margin: 85px auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  align-items: center;
+}
+
+
+/* =========================================
+   EACH ITEM
+========================================= */
+
+.count-item {
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* Vertical separators */
+
+.count-item:not(:last-child)::after {
+
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+
+  top: 18px;
+
+  height: 65px;
+
+  width: 1px;
+
+  background: #ded6d3;
+
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.count-item div {
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(48px, 6vw, 72px);
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  color: #111;
+
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.count-item span {
+
+  margin-top: 22px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  color: #666;
+
+  letter-spacing: 0.2px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .family-countdown {
+
+    padding-top: 80px;
+
+    padding-bottom: 100px;
+  }
+
+
+  .family-message {
+
+    margin-top: 45px;
+
+    line-height: 1.85;
+  }
+
+
+  .elegant-divider {
+
+    margin-top: 75px;
+
+    margin-bottom: 95px;
+  }
+
+
+  .countdown {
+
+    margin-top: 65px;
+  }
+
+
+  .count-item div {
+
+    font-size: 48px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .family-countdown {
+
+    min-height: 100svh;
+
+    padding: 65px 15px 90px;
+  }
+
+
+  .family-content {
+
+    width: 94%;
+  }
+
+
+  .family-title {
+
+    font-size: 39px;
+
+    white-space: nowrap;
+  }
+
+
+  .family-message {
+
+    margin-top: 38px;
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    max-width: 340px;
+  }
+
+
+  .desktop-only {
+
+    display: none;
+  }
+
+
+  .elegant-divider {
+
+    width: 230px;
+
+    margin-top: 65px;
+
+    margin-bottom: 80px;
+
+    gap: 8px;
+  }
+
+
+  .elegant-divider b {
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+  }
+
+
+  .countdown-title {
+
+    font-size: 40px;
+
+    margin-bottom: 28px;
+  }
+
+
+  .countdown-subtitle {
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+  }
+
+
+  .countdown {
+
+    margin-top: 55px;
+
+    max-width: 370px;
+  }
+
+
+  .count-item div {
+
+    font-size: 35px;
+  }
+
+
+  .count-item span {
+
+    margin-top: 13px;
+
+    font-size: 8px;
+  }
+
+
+  .count-item:not(:last-child)::after {
+
+    top: 8px;
+
+    height: 48px;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 370px) {
+
+  .family-title {
+
+    font-size: 34px;
+  }
+
+
+  .family-message {
+
+    font-size: 14px;
+  }
+
+
+  .countdown-title {
+
+    font-size: 36px;
+  }
+
+
+  .countdown-subtitle {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .count-item div {
+
+    font-size: 31px;
+  }
+
+
+  .count-item span {
+
+    font-size: 7px;
+  }
+
+}
+
+/* =========================================
+   SAVE THE DATE SECTION
+========================================= */
+
+.save-date-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background: #f8f1ef;
+}
+
+
+/* =========================================
+   FRAME
+========================================= */
+
+.save-date-frame {
+    width: 100%;
+    max-width: none;
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+
+    background-color: #f8f1ef;
+
+    
+    background-image: url("floral-frame.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.save-date-content {
+    width: 100%;
+    text-align: center;
+
+    padding: 31vh 7vw 22vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================================
+   SAVE THE DATE
+========================================= */
+
+.save-date-content h2 {
+    margin: 0 0 25px;
+
+    font-family: "Great Vibes", "Allura", cursive;
+
+    font-size: 30px;
+    font-weight: 500;
+
+    letter-spacing: 6px;
+
+    color: #111;
+}
+
+
+/* =========================================
+   ORNAMENT
+========================================= */
+
+.save-ornament {
+    width: 330px;
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.save-ornament span {
+    height: 1px;
+
+    background: #222;
+
+    flex: 1;
+}
+
+.save-ornament b {
+    margin: 0 12px;
+
+    font-family: serif;
+
+    font-size: 23px;
+    font-weight: normal;
+
+    color: #111;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.save-date-title {
+    margin: 20px 0 25px;
+
+    font-family: "Great Vibes", "Allura", cursive;
+
+    font-size: 92px;
+    line-height: 1;
+
+    color: #111;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   CALENDAR
+========================================= */
+
+.save-calendar {
+    width: 100%;
+    max-width: 690px;
+
+    margin-top: 35px;
+}
+
+
+/* WEEKDAYS */
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    margin-bottom: 25px;
+}
+
+.calendar-weekdays div {
+    font-family: "Times New Roman", serif;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #111;
+}
+
+
+/* DAYS */
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    row-gap: 25px;
+}
+
+.calendar-days > div {
+    position: relative;
+
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Times New Roman", serif;
+
+    font-size: 25px;
+
+    color: #111;
+}
+
+
+/* =========================================
+   SELECTED DATE - HEART
+========================================= */
+
+.calendar-days .selected-date {
+    z-index: 1;
+}
+
+.calendar-days .selected-date::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 1.8px solid #222;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+/* القلب نفسه */
+
+.calendar-days .selected-date {
+    color: #111;
+}
+
+.calendar-days .selected-date::marker {
+    display: none;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.save-bottom {
+    width: 100%;
+
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.save-bottom .save-ornament {
+    margin-bottom: 35px;
+}
+
+.save-bottom p {
+    margin: 0;
+
+    font-family: "Times New Roman", serif;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    letter-spacing: 4px;
+
+    color: #111;
+}
+
+
+/* =========================================
+   BOTTOM HEART
+========================================= */
+
+.bottom-heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+
+    margin-top: 20px;
+}
+
+.bottom-heart span {
+    height: 1px;
+
+    background: #222;
+
+    flex: 1;
+}
+
+.bottom-heart b {
+    margin: 0 15px;
+
+    font-size: 24px;
+    font-weight: normal;
+
+    color: #111;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .save-date-section {
+        padding: 0;
+        min-height: 100svh;
+    }
+
+    .save-date-frame {
+        min-height: 100svh;
+
+        background-size: 100% 100%;
+    }
+
+    .save-date-content {
+        padding: 30vw 7% 18vw;
+    }
+
+    .save-date-content h2 {
+        font-size: 21px;
+        letter-spacing: 4px;
+    }
+
+    .save-date-title {
+        font-size: 65px;
+    }
+
+    .save-calendar {
+        margin-top: 25px;
+    }
+
+    .calendar-weekdays div {
+        font-size: 13px;
+    }
+
+    .calendar-days {
+        row-gap: 14px;
+    }
+
+    .calendar-days > div {
+        font-size: 19px;
+        height: 35px;
+    }
+
+    .save-bottom {
+        margin-top: 25px;
+    }
+
+    .save-bottom p {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .save-date-frame {
+        min-height: 100svh;
+    }
+
+    .save-date-content {
+        padding-top: 30vw;
+        padding-bottom: 15vw;
+    }
+
+    .save-date-content h2 {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .save-date-title {
+        font-size: 43px;
+        margin: 15px 0 18px;
+    }
+
+    .save-ornament {
+        width: 220px;
+    }
+
+    .save-ornament b {
+        font-size: 17px;
+        margin: 0 8px;
+    }
+
+    .calendar-weekdays {
+        margin-bottom: 15px;
+    }
+
+    .calendar-weekdays div {
+        font-size: 9px;
+    }
+
+    .calendar-days {
+        row-gap: 8px;
+    }
+
+    .calendar-days > div {
+        height: 28px;
+        font-size: 15px;
+    }
+
+    .save-bottom .save-ornament {
+        margin-bottom: 20px;
+    }
+
+    .save-bottom p {
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+    .bottom-heart {
+        width: 120px;
+        margin-top: 12px;
+    }
+
+    .bottom-heart b {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+}
+
+/* =========================================
+   CELEBRATION SECTION
+========================================= */
+
+.celebration-section {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #faf5f3;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 70px 30px 100px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.celebration-content {
+    width: 100%;
+    max-width: 1000px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   THE CELEBRATION
+========================================= */
+
+.celebration-title {
+    margin: 0;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(55px, 7vw, 85px);
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    color: #111;
+
+    line-height: 1.1;
+}
+
+
+/* =========================================
+   برنامج اليوم
+========================================= */
+
+.program-title {
+    margin: 70px 0 85px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: clamp(25px, 3vw, 38px);
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    letter-spacing: 2px;
+
+    color: #111;
+}
+
+
+/* =========================================
+   PROGRAM TIME
+========================================= */
+
+.program-time {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 55px;
+}
+
+
+/* =========================================
+   TIME BLOCK
+========================================= */
+
+.time-block {
+    text-align: center;
+}
+
+.time {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    white-space: nowrap;
+}
+
+.time strong {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(50px, 5.5vw, 68px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #111;
+
+    display: inline-block;
+
+    width: 2.6em;
+
+    text-align: center;
+
+    font-variant-numeric: lining-nums;
+}
+
+.time span {
+    margin-left: 5px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    color: #111;
+}
+
+.time-block p {
+    margin-top: 15px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 27px;
+
+    color: #111;
+}
+
+
+/* =========================================
+   TIME DIVIDER
+========================================= */
+
+.time-divider {
+    width: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+}
+
+.time-divider span {
+    height: 1px;
+
+    background: #222;
+
+    flex: 1;
+}
+
+.time-divider b {
+    font-size: 17px;
+
+    font-weight: 400;
+
+    color: #111;
+}
+
+
+/* =========================================
+   MAIN DIVIDER
+========================================= */
+
+.celebration-divider {
+    width: 500px;
+    max-width: 75%;
+
+    margin: 210px auto 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.celebration-divider span {
+    height: 1px;
+
+    background: #555;
+
+    flex: 1;
+}
+
+.celebration-divider b {
+    font-family: serif;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    color: #111;
+}
+
+
+/* =========================================
+   DRESS CODE
+========================================= */
+
+.dress-code-title {
+    margin: 0 0 55px;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(55px, 6vw, 75px);
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    color: #111;
+}
+
+
+/* =========================================
+   COLORS
+========================================= */
+
+.dress-colors {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 25px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   COLOR ITEM
+========================================= */
+
+.dress-color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   CIRCLE
+========================================= */
+
+.color-circle {
+    width: 95px;
+    height: 95px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   COLORS
+========================================= */
+
+.color-1 {
+    background: #B0CBE8;
+}
+
+.color-2 {
+    background: #BFB0D1;
+}
+
+.color-3 {
+    background: #B9D2A8;
+}
+
+.color-4 {
+    background: #F8CEE2;
+}
+
+.color-5 {
+    background: #FBECA8;
+}
+
+.color-6 {
+    background: #F7D9C4;
+}
+
+
+/* =========================================
+   COLOR NAMES
+========================================= */
+
+.dress-color p {
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    color: #333;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+    .celebration-section {
+        padding: 60px 20px 80px;
+    }
+
+    .program-title {
+        margin: 55px 0 65px;
+    }
+
+    .program-time {
+        gap: 25px;
+    }
+
+    .time-divider {
+        width: 120px;
+    }
+
+    .celebration-divider {
+        margin-top: 150px;
+        margin-bottom: 90px;
+    }
+
+    .dress-colors {
+        gap: 15px;
+    }
+
+    .color-circle {
+        width: 75px;
+        height: 75px;
+    }
+
+    .dress-color p {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .celebration-section {
+        min-height: 100svh;
+
+        padding: 55px 15px 75px;
+    }
+
+    .celebration-title {
+        font-size: 52px;
+    }
+
+    .program-title {
+        font-size: 23px;
+
+        margin: 50px 0 55px;
+    }
+
+    .program-time {
+        gap: 15px;
+    }
+
+    .time strong {
+        font-size: 40px;
+    }
+
+    .time span {
+        font-size: 17px;
+    }
+
+    .time-block p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .time-divider {
+        width: 90px;
+
+        gap: 10px;
+    }
+
+    .time-divider b {
+        font-size: 12px;
+    }
+
+    .celebration-divider {
+        width: 90%;
+
+        margin-top: 110px;
+        margin-bottom: 75px;
+    }
+
+    .dress-code-title {
+        font-size: 52px;
+
+        margin-bottom: 40px;
+    }
+
+    /*
+       نخليهم 3 + 3 على الموبايل
+    */
+
+    .dress-colors {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 30px 10px;
+    }
+
+    .color-circle {
+        width: 65px;
+        height: 65px;
+    }
+
+    .dress-color {
+        gap: 12px;
+    }
+
+    .dress-color p {
+        font-size: 9px;
+
+        letter-spacing: .5px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .celebration-title {
+        font-size: 45px;
+    }
+
+    .program-title {
+        font-size: 20px;
+    }
+
+    .time strong {
+        font-size: 34px;
+    }
+
+    .time span {
+        font-size: 14px;
+    }
+
+    .time-block p {
+        font-size: 17px;
+    }
+
+    .time-divider {
+        width: 65px;
+    }
+
+    .color-circle {
+        width: 58px;
+        height: 58px;
+    }
+
+    .dress-color p {
+        font-size: 8px;
+    }
+}
+
+/* =========================================
+   VENUE SECTION
+========================================= */
+
+.venue-section {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #faf5f3;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 70px 20px 10px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.venue-content {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   VENUE TITLE
+========================================= */
+
+.venue-title {
+    margin: 0 0 85px;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(65px, 8vw, 100px);
+
+    font-weight: 400;
+    font-style: italic;
+
+    line-height: 1;
+
+    color: #111;
+}
+
+
+/* =========================================
+   VENUE IMAGE
+========================================= */
+
+.venue-image-wrapper {
+    width: 100%;
+    max-width: 720px;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 45px;
+}
+
+
+.venue-image {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    /* لو الصورة نفسها فيها خلفية بيضاء/أوف وايت */
+    mix-blend-mode: multiply;
+}
+
+
+/* =========================================
+   VENUE INFO
+========================================= */
+
+.venue-info {
+    margin-bottom: 100px;
+}
+
+
+.venue-info h3 {
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: clamp(25px, 3vw, 36px);
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    line-height: 1.5;
+
+    color: #333;
+}
+
+
+.venue-info p {
+    margin: 5px 0 0;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: clamp(22px, 2.5vw, 32px);
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    line-height: 1.5;
+
+    color: #333;
+}
+
+
+/* =========================================
+   GOOGLE MAPS BUTTON
+========================================= */
+
+.maps-button {
+    width: 275px;
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    border: 1px solid #999;
+
+    text-decoration: none;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    color: #111;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.maps-button:hover {
+    background: #111;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.venue-divider {
+    width: 500px;
+    max-width: 80%;
+
+    margin-top: 115px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+.venue-divider span {
+    height: 1px;
+
+    background: #555;
+
+    flex: 1;
+}
+
+
+.venue-divider b {
+    font-family: serif;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    letter-spacing: 3px;
+
+    color: #111;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .venue-section {
+        padding: 60px 20px 10px;
+    }
+
+    .venue-title {
+        margin-bottom: 60px;
+    }
+
+    .venue-image-wrapper {
+        margin-bottom: 35px;
+    }
+
+    .venue-info {
+        margin-bottom: 70px;
+    }
+
+    .maps-button {
+        width: 240px;
+        height: 80px;
+
+        font-size: 22px;
+    }
+
+    .venue-divider {
+        margin-top: 90px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .venue-section {
+        min-height: 100svh;
+
+        padding: 55px 15px 70px;
+    }
+
+    .venue-title {
+        font-size: 58px;
+
+        margin-bottom: 50px;
+    }
+
+    .venue-image-wrapper {
+        width: 100%;
+
+        margin-bottom: 30px;
+    }
+
+    .venue-info {
+        margin-bottom: 60px;
+    }
+
+    .venue-info h3 {
+        font-size: 21px;
+    }
+
+    .venue-info p {
+        font-size: 20px;
+    }
+
+    .maps-button {
+        width: 220px;
+        height: 70px;
+
+        font-size: 20px;
+    }
+
+    .venue-divider {
+        width: 90%;
+
+        margin-top: 75px;
+
+        gap: 8px;
+    }
+
+    .venue-divider b {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .venue-title {
+        font-size: 50px;
+
+        margin-bottom: 40px;
+    }
+
+    .venue-info h3 {
+        font-size: 19px;
+    }
+
+    .venue-info p {
+        font-size: 18px;
+    }
+
+    .maps-button {
+        width: 200px;
+        height: 65px;
+
+        font-size: 18px;
+    }
+}
+
+/* =========================================
+   FOOTER 3
+========================================= */
+
+.wedding-footer {
+    width: 100%;
+
+    background: #faf5f3;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   QUOTE SECTION
+========================================= */
+
+.footer-quote {
+    width: 100%;
+
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    padding: 10px 20px 75px;
+
+    background: #faf5f3;
+
+    border-bottom: 1px solid rgba(80, 70, 65, 0.25);
+}
+
+
+/* QUOTE TEXT */
+
+.footer-quote p {
+    margin: 90px 0 0;
+
+    font-family:
+        "Ballet",
+        "Allura",
+        "Great Vibes",
+        "Brush Script MT",
+        cursive;
+
+    font-size: clamp(45px, 6vw, 78px);
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    line-height: 1.35;
+
+    color: #111;
+}
+
+
+/* =========================================
+   QUOTE DIVIDER
+========================================= */
+
+.quote-divider {
+    width: 420px;
+    max-width: 75%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.quote-divider span {
+    flex: 1;
+
+    height: 1px;
+
+    background: rgba(80, 70, 65, 0.3);
+}
+
+
+.quote-divider b {
+    font-family: serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    letter-spacing: 3px;
+
+    color: #999;
+}
+
+
+/* =========================================
+   FINAL FOOTER
+========================================= */
+
+.footer-final {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 370px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #faf5f3;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.footer-inner {
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 45px 20px 40px;
+}
+
+
+/* =========================================
+   NAMES
+========================================= */
+
+.couple-names {
+    margin: 0;
+
+    font-family:
+        "Ballet",
+        "Allura",
+        "Great Vibes",
+        "Brush Script MT",
+        cursive;
+
+    font-size: clamp(42px, 5vw, 62px);
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    line-height: 1.1;
+
+    color: #111;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.wedding-date {
+    margin: 20px 0 0;
+
+    font-family:
+        "Cormorant Garamond",
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    color: #111;
+}
+
+
+/* =========================================
+   صُممت بواسطة
+========================================= */
+
+.created-by {
+    margin-top: 28px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+.created-by > span:first-child {
+    font-family:
+        "Cormorant Garamond",
+        "Times New Roman",
+        serif;
+
+    font-size: 15px;
+
+    letter-spacing: 1.5px;
+
+    color: #8b817b;
+}
+
+
+.creator-name {
+    font-family:
+        "Noto Naskh Arabic",
+        "Amiri",
+        serif;
+
+    font-size: 21px;
+
+    color: #111;
+
+    direction: rtl;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.footer-socials {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 38px;
+
+    margin-top: 18px;
+}
+
+
+.footer-socials a {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #111;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+
+.footer-socials svg {
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+.footer-socials a:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.55;
+}
+
+
+/* =========================================
+   FLOWERS ON SIDES
+========================================= */
+
+.footer-floral-side {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    width: 110px;
+
+    background-image: url("footer-flowers.png");
+
+    background-repeat: no-repeat;
+
+    background-size: contain;
+
+    background-position: left center;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+.footer-floral-left {
+    left: 0;
+}
+
+
+.footer-floral-right {
+    right: 0;
+
+    transform: scaleX(-1);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .footer-quote {
+        min-height: 390px;
+
+        padding: 10px 15px 55px;
+    }
+
+
+    .footer-quote p {
+        margin-top: 65px;
+
+        font-size: 39px;
+
+        line-height: 1.4;
+    }
+
+
+    .quote-divider {
+        width: 85%;
+    }
+
+
+    .footer-final {
+        min-height: 330px;
+    }
+
+
+    .footer-inner {
+        padding: 40px 15px 35px;
+    }
+
+
+    .couple-names {
+        font-size: 42px;
+    }
+
+
+    .wedding-date {
+        font-size: 17px;
+
+        margin-top: 16px;
+    }
+
+
+    .created-by {
+        margin-top: 23px;
+    }
+
+
+    .created-by > span:first-child {
+        font-size: 13px;
+    }
+
+
+    .creator-name {
+        font-size: 18px;
+    }
+
+
+    .footer-socials {
+        gap: 30px;
+
+        margin-top: 14px;
+    }
+
+
+    .footer-socials a {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .footer-socials svg {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .footer-floral-side {
+        width: 70px;
+    }
+}
+
+
+
+
+/* =========================================
+   GUESTBOOK / LOVE NOTES SECTION
+========================================= */
+.guestbook-section {
+    width: 100%;
+    min-height: 100vh;
+    background: #faf5f3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 110px 20px 120px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.guestbook-content {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.guestbook-title {
+    margin: 0;
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(58px, 7vw, 82px);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.1;
+    color: #111;
+}
+
+.guestbook-subtitle {
+    margin: 35px auto 0;
+    max-width: 610px;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(15px, 1.8vw, 19px);
+    line-height: 1.9;
+    color: #6f6763;
+    letter-spacing: .2px;
+}
+
+.guestbook-divider {
+    width: 360px;
+    max-width: 75%;
+    margin: 65px auto 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.guestbook-divider span {
+    flex: 1;
+    height: 1px;
+    background: rgba(80,70,65,.32);
+}
+
+.guestbook-divider b {
+    font-family: serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #8b817b;
+}
+
+.guestbook-form {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guestbook-field {
+    width: 100%;
+    position: relative;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+    width: 100%;
+    border: 1px solid rgba(80,70,65,.28);
+    border-radius: 0;
+    outline: none;
+    background: rgba(255,255,255,.38);
+    color: #2c2826;
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: 20px;
+    padding: 17px 20px;
+    transition: border-color .3s ease, background-color .3s ease, box-shadow .3s ease;
+}
+
+.guestbook-form input::placeholder,
+.guestbook-form textarea::placeholder {
+    color: #9b918c;
+    opacity: 1;
+}
+
+.guestbook-form input:focus,
+.guestbook-form textarea:focus {
+    border-color: #c9a99a;
+    background: rgba(255,255,255,.65);
+    box-shadow: 0 6px 22px rgba(120,95,82,.07);
+}
+
+.guestbook-form textarea {
+    min-height: 155px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.guestbook-submit {
+    align-self: center;
+    min-width: 220px;
+    margin-top: 12px;
+    padding: 15px 28px;
+    border: 1px solid #8b817b;
+    border-radius: 0;
+    background: transparent;
+    color: #292421;
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.guestbook-submit:hover {
+    background: #2c2826;
+    color: #fff;
+    border-color: #2c2826;
+    transform: translateY(-2px);
+}
+
+.guestbook-submit:disabled {
+    opacity: .55;
+    cursor: wait;
+    transform: none;
+}
+
+.guestbook-status {
+    min-height: 25px;
+    margin-top: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    letter-spacing: .3px;
+    color: #756b66;
+}
+
+.guestbook-status.success {
+    color: #66584f;
+}
+
+.guestbook-status.error {
+    color: #9a4d4d;
+}
+
+@media (max-width: 600px) {
+    .guestbook-section {
+        min-height: 100svh;
+        padding: 75px 18px 90px;
+    }
+
+    .guestbook-title {
+        font-size: 52px;
+    }
+
+    .guestbook-subtitle {
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: 1.9;
+        max-width: 340px;
+    }
+
+    .guestbook-divider {
+        width: 240px;
+        margin: 50px auto 40px;
+    }
+
+    .guestbook-form {
+        gap: 15px;
+        max-width: 360px;
+    }
+
+    .guestbook-form input,
+    .guestbook-form textarea {
+        font-size: 18px;
+        padding: 15px 16px;
+    }
+
+    .guestbook-form textarea {
+        min-height: 135px;
+    }
+
+    .guestbook-submit {
+        width: 210px;
+        font-size: 19px;
+        padding: 13px 22px;
+    }
+}
+
+@media (max-width: 380px) {
+    .guestbook-title {
+        font-size: 46px;
+    }
+
+    .guestbook-subtitle {
+        font-size: 13px;
+    }
+
+    .guestbook-divider {
+        width: 210px;
+    }
+}
+
+/* =========================================
+   GUESTBOOK SECTION
+========================================= */
+
+.guestbook-section {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #faf5f3;
+
+    padding: 110px 20px 120px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.guestbook-content {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.guestbook-title {
+
+    margin: 0;
+
+    font-family:
+        "Great Vibes",
+        "Allura",
+        cursive;
+
+    font-size: clamp(45px, 6vw, 68px);
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    line-height: 1.2;
+
+    color: #151515;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.guestbook-subtitle {
+
+    margin: 40px auto 0;
+
+    max-width: 570px;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    font-weight: 400;
+
+    color: #666;
+
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.guestbook-form {
+
+    width: 100%;
+
+    margin-top: 60px;
+
+    text-align: left;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.guestbook-field {
+
+    width: 100%;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.guestbook-field label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color: #777;
+}
+
+
+/* =========================================
+   INPUT + TEXTAREA
+========================================= */
+
+.guestbook-field input,
+.guestbook-field textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-bottom: 1px solid #cfc5c1;
+
+    background: transparent;
+
+    padding: 13px 5px;
+
+    outline: none;
+
+    border-radius: 0;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 15px;
+
+    color: #222;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.guestbook-field input::placeholder,
+.guestbook-field textarea::placeholder {
+
+    color: #aaa;
+
+    font-weight: 300;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.guestbook-field input:focus,
+.guestbook-field textarea:focus {
+
+    border-bottom-color: #8e7a70;
+
+    box-shadow:
+        0 1px 0 #8e7a70;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.guestbook-field textarea {
+
+    resize: none;
+
+    line-height: 1.8;
+
+    min-height: 120px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.guestbook-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    min-height: 54px;
+
+    margin-top: 15px;
+
+    padding: 14px 25px;
+
+    border: 1px solid #222;
+
+    border-radius: 0;
+
+    background: transparent;
+
+    color: #222;
+
+    cursor: pointer;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Hover */
+
+.guestbook-button:hover {
+
+    background: #222;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* Heart */
+
+.guestbook-button span {
+
+    font-size: 19px;
+
+    line-height: 1;
+
+}
+
+
+/* =========================================
+   LOADING STATE
+========================================= */
+
+.guestbook-button.loading {
+
+    opacity: 0.6;
+
+    pointer-events: none;
+
+    cursor: wait;
+}
+
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.guestbook-success {
+
+    display: none;
+
+    margin: 25px 0 0;
+
+    text-align: center;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 20px;
+
+    color: #6d625d;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.guestbook-error {
+
+    display: none;
+
+    margin: 20px 0 0;
+
+    text-align: center;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 13px;
+
+    color: #9a5c5c;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .guestbook-section {
+
+        min-height: 100svh;
+
+        padding: 75px 22px 90px;
+
+        align-items: center;
+    }
+
+
+    .guestbook-content {
+
+        width: 94%;
+    }
+
+
+    .guestbook-title {
+
+        font-size: 42px;
+    }
+
+
+    .guestbook-subtitle {
+
+        margin-top: 30px;
+
+        font-size: 14px;
+
+        line-height: 1.9;
+    }
+
+
+    .guestbook-form {
+
+        margin-top: 45px;
+    }
+
+
+    .guestbook-field {
+
+        margin-bottom: 24px;
+    }
+
+
+    .guestbook-field label {
+
+        font-size: 10px;
+
+        letter-spacing: 1.2px;
+    }
+
+
+    .guestbook-field input,
+    .guestbook-field textarea {
+
+        font-size: 14px;
+    }
+
+
+    .guestbook-button {
+
+        min-height: 52px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.7px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 370px) {
+
+    .guestbook-section {
+
+        padding-left: 17px;
+
+        padding-right: 17px;
+    }
+
+
+    .guestbook-title {
+
+        font-size: 37px;
+    }
+
+
+    .guestbook-subtitle {
+
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================
+   ARABIC FONT + NEW THEME
+   ========================= */
+html, body {
+    direction: rtl;
+}
+
+body, body * {
+    font-family: 'Amiri', serif !important;
+}
+
+body {
+    color: #2D3A5D;
+    background: #ffffff;
+}
+
+.family-countdown,
+.celebration-section,
+.venue-section,
+.wedding-footer,
+.footer-quote,
+.footer-final,
+.guestbook-section,
+.save-date-section,
+.save-date-frame {
+    background-color: #ffffff !important;
+}
+
+.family-title,
+.family-message,
+.countdown-title,
+.countdown-subtitle,
+.count-item div,
+.count-item span,
+.save-date-content h2,
+.save-date-title,
+.calendar-weekdays div,
+.calendar-days > div,
+.save-bottom p,
+.celebration-title,
+.program-title,
+.time strong,
+.time span,
+.time-block p,
+.time-divider b,
+.celebration-divider b,
+.dress-code-title,
+.dress-color p,
+.venue-title,
+.venue-info h3,
+.venue-info p,
+.maps-button,
+.venue-divider b,
+.guestbook-title,
+.guestbook-subtitle,
+.guestbook-field label,
+.guestbook-field input,
+.guestbook-field textarea,
+.guestbook-button,
+.guestbook-success,
+.guestbook-error,
+.footer-quote p,
+.quote-divider b,
+.couple-names,
+.wedding-date,
+.creator-name,
+.footer-socials a {
+    color: #2D3A5D !important;
+}
+
+.elegant-divider span,
+.save-ornament span,
+.bottom-heart span,
+.celebration-divider span,
+.venue-divider span,
+.quote-divider span {
+    background: #3D4C75 !important;
+}
+
+.count-item:not(:last-child)::after {
+    background: rgba(61, 76, 117, 0.35) !important;
+}
+
+.maps-button,
+.guestbook-button {
+    border-color: #AE8E79 !important;
+}
+
+.maps-button:hover,
+.guestbook-button:hover {
+    background: #2D3A5D !important;
+    color: #ffffff !important;
+    border-color: #2D3A5D !important;
+}
+
+.guestbook-field input:focus,
+.guestbook-field textarea:focus {
+    border-bottom-color: #AE8E79 !important;
+    box-shadow: 0 1px 0 #AE8E79 !important;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+    background: rgba(242, 222, 200, 0.18) !important;
+    border-color: rgba(61, 76, 117, 0.28) !important;
+}
+
+.guestbook-form input:focus,
+.guestbook-form textarea:focus {
+    background: rgba(242, 222, 200, 0.3) !important;
+}
+
+.color-1 { background: #2D3A5D !important; }
+.color-2 { background: #3D4C75 !important; }
+.color-3 { background: #AE8E79 !important; }
+.color-4 { background: #F2DEC8 !important; }
+.color-5 { background: #ffffff !important; }
+.color-6 { background: #D9DDE6 !important; }
+
+.calendar-days .selected-date::before {
+    border-color: #AE8E79 !important;
+}
+
+.save-ornament b,
+.bottom-heart b,
+.time-divider b {
+    color: #AE8E79 !important;
+}
+
+.countdown-subtitle {
+    color: #3D4C75 !important;
+}
+
+.guestbook-field input::placeholder,
+.guestbook-field textarea::placeholder {
+    color: #3D4C75 !important;
+    opacity: .7;
+}
+
+
+/* =========================================================
+   WEDDING INVITATION — COMPACT MOBILE + SOFT ANIMATIONS
+   Added without changing the existing content/design assets.
+========================================================= */
+
+/* Keep the hero immersive; all following sections fit their content. */
+.family-countdown,
+.save-date-section,
+.celebration-section,
+.venue-section,
+.guestbook-section{
+    min-height: auto !important;
+}
+
+/* Reduce oversized section breathing room on desktop too */
+.family-countdown{ padding-top: 70px; padding-bottom: 75px; }
+.celebration-section{ padding-top: 60px; padding-bottom: 70px; }
+.venue-section{ padding-top: 55px; padding-bottom: 45px; }
+.guestbook-section{ padding-top: 70px; padding-bottom: 75px; }
+
+.save-date-section{ min-height:auto !important; }
+.save-date-frame{ min-height:auto !important; }
+.save-date-content{ padding-top: 150px; padding-bottom: 120px; }
+
+.venue-divider{ margin-top: 65px; }
+.celebration-divider{ margin-top: 110px; margin-bottom: 75px; }
+.elegant-divider{ margin-top: 65px; margin-bottom: 80px; }
+
+/* Gentle entrance states */
+.reveal,
+.family-content > *,
+.save-date-content > *,
+.celebration-content > *,
+.venue-content > *,
+.guestbook-content > *,
+.footer-inner > *,
+.footer-quote > p{
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity .85s ease,
+        transform .85s cubic-bezier(.22,1,.36,1);
+}
+
+.reveal.is-visible,
+.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Soft floating details */
+.scroll-indicator{
+    animation: softFloat 2.8s ease-in-out infinite;
+}
+
+@keyframes softFloat{
+    0%,100%{ transform:translateX(-50%) translateY(0); }
+    50%{ transform:translateX(-50%) translateY(-6px); }
+}
+
+.color-circle{
+    transition: transform .45s ease, box-shadow .45s ease;
+}
+.color-circle:hover{
+    transform: translateY(-7px) scale(1.04);
+    box-shadow: 0 10px 24px rgba(0,0,0,.10);
+}
+
+.maps-button,
+.guestbook-button{
+    transition: transform .35s ease, background-color .35s ease, color .35s ease, box-shadow .35s ease;
+}
+.maps-button:hover,
+.guestbook-button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(50,40,35,.10);
+}
+
+/* Heart/date details pulse very subtly */
+.bottom-heart b,
+.calendar-days .selected-date::before{
+    animation: delicatePulse 2.6s ease-in-out infinite;
+}
+
+@keyframes delicatePulse{
+    0%,100%{ transform:translate(-50%,-50%) scale(1); }
+    50%{ transform:translate(-50%,-50%) scale(1.06); }
+}
+
+/* Make the transition between sections visually tighter */
+.wedding-footer{
+    margin-top: 0 !important;
+}
+
+/* =========================
+   MOBILE — compact layout
+========================= */
+@media (max-width:600px){
+
+    /* Much smaller headings */
+    .family-title{
+        font-size: 29px !important;
+        line-height: 1.15;
+    }
+
+    .countdown-title{
+        font-size: 29px !important;
+        margin-bottom: 18px !important;
+    }
+
+    .celebration-title{
+        font-size: 35px !important;
+    }
+
+    .dress-code-title{
+        font-size: 35px !important;
+        margin-bottom: 26px !important;
+    }
+
+    .venue-title{
+        font-size: 39px !important;
+        margin-bottom: 28px !important;
+    }
+
+    .guestbook-title{
+        font-size: 35px !important;
+    }
+
+    /* Sections hug their content */
+    .family-countdown{
+        min-height:auto !important;
+        padding: 38px 13px 45px !important;
+    }
+
+    .family-content{
+        width: 96% !important;
+    }
+
+    .family-message{
+        margin-top: 23px !important;
+        font-size: 13px !important;
+        line-height: 1.8 !important;
+        max-width: 330px !important;
+    }
+
+    .elegant-divider{
+        width: 190px !important;
+        margin: 35px auto 42px !important;
+        gap: 6px !important;
+    }
+
+    .elegant-divider b{
+        font-size: 9px !important;
+        letter-spacing: .8px !important;
+    }
+
+    .countdown-subtitle{
+        font-size: 10px !important;
+        letter-spacing: 2px !important;
+    }
+
+    .countdown{
+        margin-top: 32px !important;
+        max-width: 330px !important;
+    }
+
+    .count-item div{
+        font-size: 29px !important;
+    }
+
+    .count-item span{
+        margin-top: 8px !important;
+        font-size: 7px !important;
+    }
+
+    .count-item:not(:last-child)::after{
+        top: 5px !important;
+        height: 39px !important;
+    }
+
+    /* Save the date */
+    .save-date-section{
+        min-height:auto !important;
+    }
+
+    .save-date-frame{
+        min-height:auto !important;
+    }
+
+    .save-date-content{
+        padding: 85px 6% 65px !important;
+    }
+
+    .save-date-content h2{
+        font-size: 14px !important;
+        letter-spacing: 2px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .save-date-title{
+        font-size: 39px !important;
+        margin: 10px 0 14px !important;
+    }
+
+    .save-calendar{
+        margin-top: 18px !important;
+    }
+
+    .calendar-weekdays{
+        margin-bottom: 10px !important;
+    }
+
+    .calendar-weekdays div{
+        font-size: 8px !important;
+    }
+
+    .calendar-days{
+        row-gap: 6px !important;
+    }
+
+    .calendar-days > div{
+        height: 25px !important;
+        font-size: 14px !important;
+    }
+
+    .calendar-days .selected-date::before{
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+    .save-bottom{
+        margin-top: 18px !important;
+    }
+
+    .save-bottom .save-ornament{
+        margin-bottom: 13px !important;
+    }
+
+    .save-bottom p{
+        font-size: 7px !important;
+        letter-spacing: 1.3px !important;
+    }
+
+    .bottom-heart{
+        width: 95px !important;
+        margin-top: 8px !important;
+    }
+
+    .bottom-heart b{
+        font-size: 15px !important;
+        margin: 0 8px !important;
+    }
+
+    /* Celebration */
+    .celebration-section{
+        min-height:auto !important;
+        padding: 40px 13px 48px !important;
+    }
+
+    .program-title{
+        font-size: 18px !important;
+        margin: 30px 0 32px !important;
+    }
+
+    .program-time{
+        gap: 9px !important;
+    }
+
+    .time strong{
+        font-size: 33px !important;
+    }
+
+    .time span{
+        font-size: 14px !important;
+    }
+
+    .time-block p{
+        font-size: 16px !important;
+        margin-top: 7px !important;
+    }
+
+    .time-divider{
+        width: 55px !important;
+        gap: 7px !important;
+    }
+
+    .time-divider b{
+        font-size: 10px !important;
+    }
+
+    .celebration-divider{
+        width: 75% !important;
+        margin: 55px auto 48px !important;
+    }
+
+    .dress-colors{
+        gap: 22px 8px !important;
+    }
+
+    .color-circle{
+        width: 53px !important;
+        height: 53px !important;
+    }
+
+    .dress-color{
+        gap: 8px !important;
+    }
+
+    .dress-color p{
+        font-size: 7px !important;
+    }
+
+    /* Venue */
+    .venue-section{
+        min-height:auto !important;
+        padding: 38px 13px 45px !important;
+    }
+
+    .venue-image-wrapper{
+        margin-bottom: 20px !important;
+    }
+
+    .venue-info{
+        margin-bottom: 32px !important;
+    }
+
+    .venue-info h3{
+        font-size: 17px !important;
+    }
+
+    .venue-info p{
+        font-size: 16px !important;
+    }
+
+    .maps-button{
+        width: 185px !important;
+        height: 55px !important;
+        font-size: 16px !important;
+    }
+
+    .venue-divider{
+        width: 78% !important;
+        margin-top: 45px !important;
+    }
+
+    .venue-divider b{
+        font-size: 9px !important;
+        letter-spacing: 1.5px !important;
+    }
+
+    /* Guestbook */
+    .guestbook-section{
+        min-height:auto !important;
+        padding: 45px 16px 55px !important;
+    }
+
+    .guestbook-subtitle{
+        margin-top: 17px !important;
+        font-size: 12px !important;
+        line-height: 1.75 !important;
+    }
+
+    .guestbook-form{
+        margin-top: 32px !important;
+    }
+
+    .guestbook-field{
+        margin-bottom: 18px !important;
+    }
+
+    .guestbook-field label{
+        margin-bottom: 6px !important;
+        font-size: 10px !important;
+    }
+
+    .guestbook-field input,
+    .guestbook-field textarea{
+        font-size: 13px !important;
+        padding: 9px 4px !important;
+    }
+
+    .guestbook-field textarea{
+        min-height: 90px !important;
+    }
+
+    .guestbook-button{
+        min-height: 45px !important;
+        margin-top: 8px !important;
+        padding: 10px 18px !important;
+        font-size: 11px !important;
+    }
+
+    /* Footer */
+    .footer-quote{
+        min-height: 260px !important;
+        padding: 10px 12px 35px !important;
+    }
+
+    .footer-quote p{
+        margin-top: 35px !important;
+        font-size: 30px !important;
+        line-height: 1.35 !important;
+    }
+
+    .footer-final{
+        min-height: 235px !important;
+    }
+
+    .footer-inner{
+        padding: 28px 12px 25px !important;
+    }
+
+    .couple-names{
+        font-size: 32px !important;
+    }
+
+    .wedding-date{
+        font-size: 14px !important;
+        margin-top: 10px !important;
+    }
+
+    .created-by{
+        margin-top: 14px !important;
+    }
+
+    .created-by > span:first-child{
+        font-size: 10px !important;
+    }
+
+    .creator-name{
+        font-size: 15px !important;
+    }
+
+    .footer-socials{
+        gap: 23px !important;
+        margin-top: 10px !important;
+    }
+
+    .footer-socials a{
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    .footer-socials svg{
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .footer-floral-side{
+        width: 52px !important;
+    }
+
+    /* Disable large entrance movement on very small screens */
+    .reveal,
+    .family-content > *,
+    .save-date-content > *,
+    .celebration-content > *,
+    .venue-content > *,
+    .guestbook-content > *,
+    .footer-inner > *,
+    .footer-quote > p{
+        transform: translateY(15px);
+    }
+}
+
+@media (max-width:380px){
+    .family-title,
+    .countdown-title,
+    .celebration-title,
+    .dress-code-title,
+    .venue-title,
+    .guestbook-title{
+        font-size: 32px !important;
+    }
+
+    .family-message{ font-size:12px !important; }
+    .count-item div{ font-size:27px !important; }
+    .save-date-title{ font-size:35px !important; }
+    .time strong{ font-size:30px !important; }
+    .footer-quote p{ font-size:27px !important; }
+}
+
+</style>
+</head>
+<body>
+
+    
+
+<!-- =========================SECTION 1========================= -->
+<section class="hero-section">
+
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="videoh.mp4" type="video/mp4">
+    </video>
+
+    <div class="scroll-indicator" onclick="scrollToNext()">
+
+        <p>مرر لأسفل</p>
+
+        <svg class="arrow" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M6 9L12 15L18 9"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+
+    </div>
+
+</section>
+
+<!-- ================= DEAR FAMILY + COUNTDOWN ================= -->
+<section id="section2" class="family-countdown">
+
+  <div class="family-content">
+
+    <!-- أهلنا وأحبابنا -->
+    <h2 class="family-title">
+      أهلنا وأحبابنا
+    </h2>
+
+    <!-- رسالتنا -->
+    <p class="family-message">
+      في هذا اليوم الجميل، نود أن نشارككم
+      <br class="desktop-only">
+      أجمل اللحظات وأصدق الابتسامات في
+      <br class="desktop-only">
+      حكاية حبنا.
+    </p>
+
+    <!-- DECORATIVE DIVIDER -->
+    <div class="celebration-divider">
+      <span></span>
+      <b>✦ • ✦</b>
+      <span></span>
+    </div>
+
+    <!-- العد التنازلي Title -->
+    <h2 class="countdown-title">
+      العد التنازلي
+    </h2>
+
+    <!-- العد التنازلي -->
+    <div class="countdown">
+
+      <div class="count-item">
+        <div id="count-days">00</div>
+        <span>يوم</span>
+      </div>
+
+      <div class="count-item">
+        <div id="count-hours">00</div>
+        <span>ساعة</span>
+      </div>
+
+      <div class="count-item">
+        <div id="count-minutes">00</div>
+        <span>دقيقة</span>
+      </div>
+
+      <div class="count-item">
+        <div id="count-seconds">00</div>
+        <span>ثانية</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SAVE THE DATE SECTION -->
+<section class="save-date-section">
+
+    <div class="save-date-frame">
+
+        <div class="save-date-content">
+
+            <!-- DATE -->
+<div class="save-date-title">
+    نوفمبر 2026
+</div>
+
+<div class="bottom-heart">
+                    <span></span>
+                    <b>♥</b>
+                    <span></span>
+                </div>
+
+
+<!-- CALENDAR -->
+<div class="save-calendar">
+
+    <div class="calendar-weekdays">
+        <div>الأحد</div>
+        <div>الاثنين</div>
+        <div>الثلاثاء</div>
+        <div>الأربعاء</div>
+        <div>الخميس</div>
+        <div>الجمعة</div>
+        <div>السبت</div>
+    </div>
+
+    <div class="calendar-days">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div class="selected-date">5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>13</div>
+          <div>14</div>
+          <div>15</div>
+          <div>16</div>
+          <div>17</div>
+          <div>18</div>
+          <div>19</div>
+          <div>20</div>
+          <div>21</div>
+          <div>22</div>
+          <div>23</div>
+          <div>24</div>
+          <div>25</div>
+          <div>26</div>
+          <div>27</div>
+          <div>28</div>
+          <div>29</div>
+          <div>30</div>
+        </div>
+
+</div>
+
+
+            <!-- BOTTOM -->
+            <div class="save-bottom">
+
+                <div class="bottom-heart">
+                    <span></span>
+                    <b>♥</b>
+                    <span></span>
+                </div>
+
+                <p>
+                    لا نستطيع الانتظار حتى<br>
+                    نحتفل معكم
+                </p>
+<br>
+    <br>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+</section>
+
+<!-- =========================================
+     SECTION 4 - CELEBRATION + DRESS CODE
+========================================= -->
+
+<section class="celebration-section">
+
+    <div class="celebration-content">
+
+        <!-- THE CELEBRATION -->
+        <h2 class="celebration-title">
+            الاحتفال
+        </h2>
+
+
+        <!-- برنامج اليوم -->
+        <h3 class="program-title">
+يبدأ احتفالنا في تمام الساعة السادسة مساءً بعقد قراننا وبدء فرحتنا معًا
+        </h3>
+
+
+       
+
+        <!-- DECORATIVE DIVIDER -->
+        <div class="celebration-divider">
+            <span></span>
+            <b>✦ • ✦</b>
+            <span></span>
+        </div>
+
+
+        
+
+</section>
+
+<!-- =========================================
+     VENUE SECTION
+========================================= -->
+
+<section class="venue-section">
+
+    <div class="venue-content">
+
+        <!-- TITLE -->
+        <h2 class="venue-title">
+            المكان
+        </h2>
+
+
+        <!-- VENUE IMAGE -->
+        <div class="venue-image-wrapper">
+
+            <img
+                src="venue-image.png"
+                alt="المكان"
+                class="venue-image"
+            >
+
+        </div>
+
+
+        <!-- VENUE NAME -->
+        <div class="venue-info">
+
+            <h3>
+قاعه رويال لامور برادايس         
+            </h3>
+            <p>
+علي طريق محور المحمودية سموحه  اخر شارع النقل والهندسه   </p>
+
+        </div>
+
+
+        <!-- GOOGLE MAPS BUTTON -->
+
+
+        <a
+            href="https://maps.app.goo.gl/9RasaJSsgUWqxFes5"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="maps-button"
+        >
+            الموقع على الخريطة
+        </a>
+
+
+        <!-- DECORATIVE DIVIDER -->
+
+        <div class="venue-divider">
+
+            <span></span>
+
+            <b>✦ • ✦</b>
+
+            <span></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     GUESTBOOK / MESSAGES SECTION
+========================================= -->
+
+<section class="guestbook-section">
+
+    <div class="guestbook-content">
+
+        <!-- Title -->
+        <h2 class="guestbook-title">
+            اتركوا لنا كلمة من القلب
+        </h2>
+
+        <!-- Subtitle -->
+        <p class="guestbook-subtitle">
+            يسعدنا أن نحتفظ بجزء صغير من محبتكم معنا
+        </p>
+
+
+        <!-- Form -->
+        <!-- Guestbook Form -->
+
+<form id="guestbookForm" class="guestbook-form">
+
+    <!-- Name -->
+    <div class="guestbook-field">
+
+        <!-- <label for="guestName">
+            اسمك
+        </label> -->
+
+        <input
+            type="text"
+            id="guestName"
+            name="name"
+            placeholder="اكتب اسمك..."
+            required
+            autocomplete="name"
+        >
+
+    </div>
+
+
+    <!-- Message -->
+    <div class="guestbook-field">
+
+        <!-- <label for="guestMessage">
+            رسالتك
+        </label> -->
+
+        <textarea
+            id="guestMessage"
+            name="message"
+            placeholder="اكتب رسالة جميلة للعروسين..."
+            rows="5"
+            required
+        ></textarea>
+
+    </div>
+
+
+    <!-- Submit Button -->
+    <button
+        type="submit"
+        class="guestbook-button"
+        id="guestbookButton"
+    >
+        أرسلوا محبتكم
+        <span>♡</span>
+    </button>
+
+
+    <!-- Success Message -->
+    <p
+        class="guestbook-success"
+        id="guestbookSuccess"
+        style="display: none;"
+    >
+        شكرًا لكلماتكم الجميلة ♡
+    </p>
+
+
+    <!-- Error Message -->
+    <p
+        class="guestbook-error"
+        id="guestbookError"
+        style="display: none;"
+    >
+        حدث خطأ ما. يرجى المحاولة مرة أخرى.
+    </p>
+
+</form>
+
+    </div>
+
+    
+
+</section>
+
+<!-- =========================================
+     FOOTER 3
+========================================= -->
+
+<footer class="wedding-footer">
+
+    
+
+    <!-- ================================
+         QUOTE
+    ================================= -->
+
+    <!-- <div class="footer-quote">
+
+        <p>
+            "وجودكم هو أجمل جزء من<br>
+            حكايتنا"
+        </p>
+
+    </div> -->
+
+
+    <!-- ================================
+         FINAL FOOTER
+    ================================= -->
+
+    <div class="footer-final">
+
+        <!-- Flowers -->
+        <div class="footer-floral-side footer-floral-left"></div>
+        <div class="footer-floral-side footer-floral-right"></div>
+
+
+        <div class="footer-inner">
+
+            
+
+            <!-- Date -->
+            <p class="wedding-date">
+                5 نوفمبر 2026
+            </p>
+
+
+            <!-- Created By -->
+            <div class="created-by">
+
+                <span>صُممت بواسطة</span>
+
+                <span class="creator-name">
+                    HoneyVows
+                </span>
+
+            </div>
+
+
+            <!-- Social -->
+            <div class="footer-socials">
+
+                <!-- Instagram -->
+                <a
+                    href="https://www.instagram.com/honey_vows?igsi=MXJkcWk0YzFiZG1qNA%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <svg viewBox="0 0 24 24">
+
+                        <rect
+                            x="3"
+                            y="3"
+                            width="18"
+                            height="18"
+                            rx="5">
+                        </rect>
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="4">
+                        </circle>
+
+                        <circle
+                            cx="17.5"
+                            cy="6.5"
+                            r="1">
+                        </circle>
+
+                    </svg>
+                </a>
+
+
+                <!-- TikTok -->
+                <a
+                    href="https://www.tiktok.com/@honeyvows.digital?_r=1&_t=ZS-99F3yPAqHQX"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                >
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            d="M15 3v10.2a4.8 4.8 0 1 1-4.8-4.8">
+                        </path>
+
+                        <path
+                            d="M15 3c.4 2.4 1.8 4.1 4 4.8">
+                        </path>
+
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<script>
+function scrollToNext(){
+    document.getElementById("section2").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+</script>
+
+<script>
+
+/* =========================================
+   COUNTDOWN DATE
+========================================= */
+
+
+
+const targetDate = new Date("2026-11-05T18:00:00").getTime();
+
+
+function update() {
+
+  const now = new Date().getTime();
+
+  const difference = targetDate - now;
+
+
+
+  if (difference <= 0) {
+
+    document.getElementById("count-days").textContent = "00";
+    document.getElementById("count-hours").textContent = "00";
+    document.getElementById("count-minutes").textContent = "00";
+    document.getElementById("count-seconds").textContent = "00";
+
+    return;
+  }
+
+
+  /* Days */
+
+  const days = Math.floor(
+    difference / (1000 * 60 * 60 * 24)
+  );
+
+
+  /* Hours */
+
+  const hours = Math.floor(
+    (difference % (1000 * 60 * 60 * 24))
+    / (1000 * 60 * 60)
+  );
+
+
+  /* Minutes */
+
+  const minutes = Math.floor(
+    (difference % (1000 * 60 * 60))
+    / (1000 * 60)
+  );
+
+
+  /* Seconds */
+
+  const seconds = Math.floor(
+    (difference % (1000 * 60))
+    / 1000
+  );
+
+
+ 
+  document.getElementById("count-days").textContent =
+    String(days).padStart(2, "0");
+
+  document.getElementById("count-hours").textContent =
+    String(hours).padStart(2, "0");
+
+  document.getElementById("count-minutes").textContent =
+    String(minutes).padStart(2, "0");
+
+  document.getElementById("count-seconds").textContent =
+    String(seconds).padStart(2, "0");
+
+}
+
+
+
+update();
+
+
+
+setInterval(update , 1000);
+
+</script>
+
+
+
+
+
+<script>
+
+const GOOGLE_SHEET_URL =
+    "https://script.google.com/macros/s/AKfycbwe3_CoR6IyZK5gsiFI9_5zCC71tvmj_BPjEsWbhplt-I5d8PWE-c553QmiBVK8YItDtQ/exec";
+
+
+const guestbookForm =
+    document.getElementById("guestbookForm");
+
+const guestbookButton =
+    document.getElementById("guestbookButton");
+
+const guestbookSuccess =
+    document.getElementById("guestbookSuccess");
+
+const guestbookError =
+    document.getElementById("guestbookError");
+
+
+guestbookForm.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    guestbookSuccess.style.display = "none";
+    guestbookError.style.display = "none";
+
+
+    const name =
+        document.getElementById("guestName")
+        .value
+        .trim();
+
+    const message =
+        document.getElementById("guestMessage")
+        .value
+        .trim();
+
+
+    if (!name || !message) {
+
+        guestbookError.textContent =
+            "يرجى كتابة الاسم والرسالة.";
+
+        guestbookError.style.display = "block";
+
+        return;
+    }
+
+
+    guestbookButton.classList.add("loading");
+
+    guestbookButton.innerHTML =
+        "جارٍ الإرسال... ♡";
+
+
+    try {
+
+        const formData = new FormData();
+
+        formData.append("name", name);
+        formData.append("message", message);
+
+
+        await fetch(GOOGLE_SHEET_URL, {
+
+            method: "POST",
+
+            mode: "no-cors",
+
+            body: formData
+
+        });
+
+
+        guestbookForm.reset();
+
+        guestbookSuccess.style.display = "block";
+
+
+    } catch (error) {
+
+        console.error(error);
+
+        guestbookError.textContent =
+            "حدث خطأ ما. يرجى المحاولة مرة أخرى.";
+
+        guestbookError.style.display = "block";
+
+    }
+
+
+    guestbookButton.classList.remove("loading");
+
+    guestbookButton.innerHTML =
+        'أرسلوا محبتكم <span>♡</span>';
+
+});
+
+</script>
+
+
+<script>
+/* Soft scroll-reveal animation for the wedding invitation */
+document.addEventListener("DOMContentLoaded", () => {
+    const groups = [
+        ".family-content > *",
+        ".save-date-content > *",
+        ".celebration-content > *",
+        ".venue-content > *",
+        ".guestbook-content > *",
+        ".footer-inner > *",
+        ".footer-quote > p"
+    ];
+
+    const elements = document.querySelectorAll(groups.join(","));
+
+    elements.forEach((el, index) => {
+        el.style.transitionDelay = `${Math.min(index * 70, 420)}ms`;
+    });
+
+    if (!("IntersectionObserver" in window)) {
+        elements.forEach(el => el.classList.add("is-visible"));
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.12,
+        rootMargin: "0px 0px -35px 0px"
+    });
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+
+<style id="final-polish-overrides">
+.countdown{direction:rtl;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:0}
+.count-item{min-width:0;position:relative}
+.count-item:not(:last-child)::after{right:auto;left:0;top:50%;transform:translateY(-50%);height:72px;width:1px;background:#AE8E79;opacity:.75}
+.count-item div{color:#2D3A5D;text-align:center}
+.count-item span{color:#3D4C75;text-align:center}
+.countdown-title{color:#2D3A5D}.countdown-subtitle{color:#AE8E79}
+.footer-final{position:relative;min-height:430px;background:#fff}
+.footer-floral-side{z-index:1;width:150px}.footer-inner{z-index:5}
+.couple-names{color:#2D3A5D}.wedding-date{color:#3D4C75}.created-by>span:first-child{color:#AE8E79}.creator-name{color:#2D3A5D}.footer-socials a{color:#3D4C75}
+.family-title,.celebration-title,.dress-code-title,.venue-title,.guestbook-title{color:#2D3A5D}
+.family-message,.guestbook-subtitle{color:#3D4C75}.program-title,.venue-info h3,.venue-info p{color:#3D4C75}
+.elegant-divider b,.celebration-divider b,.venue-divider b,.quote-divider b,.guestbook-divider b{color:#AE8E79}
+.maps-button{color:#2D3A5D;border-color:#AE8E79}.guestbook-form input,.guestbook-form textarea{color:#2D3A5D}.guestbook-submit{color:#2D3A5D;border-color:#AE8E79}
+@media(max-width:600px){.count-item:not(:last-child)::after{height:50px}.footer-final{min-height:350px}.footer-floral-side{width:85px}}
+</style>
+</body>
+</html>
